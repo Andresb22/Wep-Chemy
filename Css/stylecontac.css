@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ header {
+   background-color: #F9F8FC;
+ }
+
+ #logo {
+   margin: auto;
+   text-align: center;
+ }
+.nombt{
+  color: #f19142;
+}
+ nav {
+  background-color:#17181C;
+  text-align: center;
+}
+
+nav ul {
+   list-style: none;
+   display: inline-block;
+   padding:18px;
+}
+
+nav ul li {
+    float: left;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding:5px;
+  font-family: "Russo One", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Inicialmente no tiene ancho */
+  height: 2px;
+  background: #f19142; /* Color del subrayado */
+  bottom: 0; /* Posición debajo del texto */
+  left: 0;
+  transition:  0.5s ease; /* Transición suave */
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+ p {
+  font-family: "Russo One", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+ }
+footer {
+  background-color: #333; 
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+section {
+    width: 90%;
+    max-width: 1600px;
+    height: 500px;
+    margin: 50px auto;
+}
+#fila {
+    width: 100%;
+    display: flex;
+}
+#focontac {
+    width: 250px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 10px 0px 10px 0px;
+    filter: drop-shadow(10px 20px 5px );
+}
+#foto {
+    width: 30%;
+}
+#info {
+    width: 70%;
+}
+#info h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 0;
+}
+
+#info .detalle {
+    width: 150px;
+    height: 4px;
+    background: orange;
+}
+#info p {
+    color: black;
+    font-size: 15px;
+    margin: 30px;
+}
+#info article {
+    border: 3px solid orange;
+}
+article ul li {
+    color: black;
+    font-size: 20px;
+    font-family: "Russo One", sans-serif;
+    list-style: none;
+    width: 40%;
+    display: inline-block;
+}
+#info .redes {
+    margin: 30px 0;
+}
+#info .redes a{
+    margin: 0 20px;
+}
+
+.contact{
+    padding: 25px 30px;
+    background: linear-gradient(135deg, #fcbf8e, #f37e1f);
+    border: 3px solid white;
+    box-shadow: 0 0 5px #333;
+    border-radius: 10px;
+    font-family: "Russo One", sans-serif;
+    color: black;
+    justify-content: center;
+    margin-left: 700px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.nomb , .email , .comen {
+  background-color: white;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    justify-content: center;
+}
+
+
+.comen {
+  height: 70px;
+    resize: none;
+    margin-bottom: 10px;
+}

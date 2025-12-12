@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ header {
+   background-color: #F9F8FC;
+ }
+
+ #logo {
+   margin: auto;
+   text-align: center;
+ }
+.nombt{
+  color: #f19142;
+}
+
+ nav {
+  background-color:#17181C;
+  text-align: center;
+}
+
+nav ul {
+   list-style: none;
+   display: inline-block;
+   padding:18px;
+}
+
+nav ul li {
+    float: left;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding:5px;
+  font-family: "Russo One", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Inicialmente no tiene ancho */
+  height: 2px;
+  background: #f19142; /* Color del subrayado */
+  bottom: 0; /* Posición debajo del texto */
+  left: 0;
+  transition:  0.5s ease; /* Transición suave */
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.contenedor-tarjetas {
+    display: flex; /* ¡Esto las pone una al lado de la otra! */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no caben */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+}
+
+/* Estilos para cada tarjeta individual */
+.tarjeta {
+    width: 300px; /* Ancho de cada tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; /* Para que la imagen no se salga del borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    background-color: #f18d3b;
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.tarjeta img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+/* Estilos para la descripción */
+.tarjeta p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+
+
+footer {
+  background-color: #333; 
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/*Desde aca son los estilos del menu*/
+
+.grid-item1 img {
+  width: 200px;
+  height: 200px;
+}
+
+table tr td img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border-style: dotted; 
+  border-color: #f19142;
+}
+
+table tr td {
+  text-align: center;
+  margin: 20px;
+  padding: 25px;
+  width: 30%;
+}
+#encabezado {
+  background-color: orange;
+}
+
+
