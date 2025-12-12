@@ -53,6 +53,11 @@ nav ul li a:hover {
   font-weight: weight;
   font-style: normal;
  }
+
+ form {
+  background-color: #17181C;
+ }
+
 footer {
   background-color: #333; 
   color: #fff;
