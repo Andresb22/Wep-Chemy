@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-body{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +17,7 @@ body{
    text-align: center;
  }
 .nombt{
-  color: #f19142;
+  color: #fd3c01;
 }
 
  nav {
@@ -55,7 +55,7 @@ a::after {
   position: absolute;
   width: 0; /* Inicialmente no tiene ancho */
   height: 2px;
-  background: #f19142; /* Color del subrayado */
+  background: #fd3c01; /* Color del subrayado */
   bottom: 0; /* Posición debajo del texto */
   left: 0;
   transition:  0.5s ease; /* Transición suave */
@@ -65,23 +65,81 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+.banner img{
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.texbanner {
+  position: absolute;
+  top: 62%;
+  left: 20%;
+  color: white;
+  padding: 10px;
+}
+
+.texbanner h2{
+  margin: 0;
+  font-size: 2em;
+}
+
+.linkbannner1{
+  position: absolute;
+  top: 92%;
+  left: 27%;
+  transform: translate(-50% -50%);
+  text-align: center;
+  padding: 10px;
+}
+
+.linkbannner2{
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.banner a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(63, 56, 48);
+  max-width: 100%;
+  background: linear-gradient(135deg, #f8772c, #fd3c01);
+}
+
+.banner a:hover{
+  color: white;
+  background: black;
+  transition: 1s ease;
+}
+
 .contenedor-tarjetas {
     display: flex; /* ¡Esto las pone una al lado de la otra! */
     flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no caben */
     justify-content: center; /* Centra las tarjetas */
-    gap: 20px; /* Espacio entre tarjetas */
+    gap: 100px; /* Espacio entre tarjetas */
     padding: 20px;
 }
 
 /* Estilos para cada tarjeta individual */
 .tarjeta {
-    width: 300px; /* Ancho de cada tarjeta */
+    width: 250px; /* Ancho de cada tarjeta */
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden; /* Para que la imagen no se salga del borde redondeado */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center; /* Centra el texto dentro de la tarjeta */
-    background-color: #f18d3b;
+    background-color: black;
 }
 
 /* Estilos para la imagen dentro de la tarjeta */
@@ -96,11 +154,13 @@ nav ul li a:hover::after {
     padding: 10px;
     margin: 0;
     font-size: 14px;
-    color: #333;
+    color: white;
 }
 
-
-
+.tarjeta a {
+  text-decoration: none;
+  color: #fd3c01;
+}
 
 
 footer {
@@ -121,7 +181,7 @@ table tr td img {
   height: 200px;
   border-radius: 100px;
   border-style: dotted; 
-  border-color: #f19142;
+  border-color: #fd3c01;
 }
 
 table tr td {

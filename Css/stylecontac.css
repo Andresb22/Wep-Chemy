@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     font-style: normal;
  }
+
  header {
    background-color: #F9F8FC;
  }
@@ -17,7 +18,7 @@ body {
    text-align: center;
  }
 .nombt{
-  color: #f19142;
+  color: #fd3c01;
 }
  nav {
   background-color:#17181C;
@@ -70,7 +71,7 @@ nav ul li a:hover::after {
   font-weight: weight;
   font-style: normal;
  }
- 
+
 footer {
   background-color: #333;
   color: #fff;
@@ -84,18 +85,20 @@ section {
     margin: 50px auto;
 }
 #fila {
-    width: 100%;
+    max-width: 100%;
     display: flex;
 }
 #focontac {
     width: 250px;
+    max-width: 100%;
     margin: 0%;
     padding: 0%;
     border-radius: 10px 0px 10px 0px;
     filter: drop-shadow(10px 20px 5px );
 }
 #foto {
-    width: 30%;
+    width: 20%;
+    max-width: 100%;
 }
 #info {
     width: 70%;
@@ -108,10 +111,8 @@ section {
     margin-bottom: 0;
 }
 
-#info .detalle {
-    width: 150px;
-    height: 4px;
-    background: orange;
+.detalle strong{
+  max-width: 100%;
 }
 #info p {
     color: black;
@@ -138,7 +139,7 @@ article ul li {
 
 .contact{
     padding: 25px 30px;
-    background: linear-gradient(135deg, #fcbf8e, #f37e1f);
+    background: linear-gradient(135deg, #f8772c, #fd3c01);
     border: 3px solid white;
     box-shadow: 0 0 5px #333;
     border-radius: 10px;
