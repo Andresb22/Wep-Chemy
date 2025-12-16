@@ -87,6 +87,7 @@ section {
 #fila {
     max-width: 100%;
     display: flex;
+    gap: 20px;
 }
 #focontac {
     width: 250px;
@@ -137,18 +138,15 @@ article ul li {
     margin: 0 20px;
 }
 
-.contact{
+.contact {
     padding: 25px 30px;
     background: linear-gradient(135deg, #f8772c, #fd3c01);
     border: 3px solid white;
     box-shadow: 0 0 5px #333;
     border-radius: 10px;
-    font-family: "Russo One", sans-serif;
     color: black;
-    justify-content: center;
-    margin-left: 700px;
-    margin-right: 50px;
-    margin-bottom: 100px;
+    max-width: 500px;
+    margin: 50px auto 100px auto;
 }
 
 .nomb , .email , .comen {
@@ -169,4 +167,56 @@ article ul li {
   height: 70px;
     resize: none;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    padding: 10px;
+  }
+
+  nav ul li {
+    float: none;
+    margin: 10px 0;
+  }
+
+  #fila {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #foto,
+  #info {
+    width: 100%;
+    text-align: center;
+  }
+
+  #focontac {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  article ul li {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  section {
+    height: auto;
+    margin: 30px auto;
+  }
+
+  .contact {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
 }
