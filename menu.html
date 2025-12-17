@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Css/style.css" />
-    <link rel="icon" href="IMG/logocc1.png" />
-    <!--Agrega un icono en la pestaña del navegador-->
-    <link rel="apple-touch-icon" href="IMG/logocc1.png" />
-    <!--Agrega un icono en el celular-->
-    <title>Menu</title>
+    <link rel="icon" href="IMG/logocc1.png" /> <!--Agrega un icono en la pestaña del navegador-->
+    <link rel="apple-touch-icon" href="IMG/logocc1.png" /> <!--Agrega un icono en el celular-->
+    <title>Menu</title><!--Nombre de la pagina-->
   </head>
 
-  <body background="Img/descarga.png">
+  <body background="Img/descarga.png"> <!--Imagen del fondo da la pagina-->
     <header>
       <div id="logo">
         <a href="Index.html" target="_blank"
-          ><img src="Img/logocc1.png" alt="Chemy"
-        /></a>
-        <h1><span class="nombt">Chemy</span> Sanwicheria</h1>
+          ><img src="Img/logocc1.png" alt="Chemy"/></a><!--Logo del encabezado-->
+        <h1><span class="nombt">Chemy</span> Sanwicheria</h1><!--Titulo del encabezado-->
       </div>
-      <nav>
+      <nav><!--Menu de navegación de la pagina-->
         <ul>
           <li><a href="Index.html">INICIO</a></li>
           <li><a href="menu.html">MENU</a></li>
@@ -33,187 +30,243 @@
       </nav>
     </header>
 
-   
+    <h1 class="tmenu">🍔 Menú</h1><!--Titulo de la pagina-->
 
+    <h2 id="hamburguesas" class="categoria">Hamburguesas</h2><!--Tarjetas con el menu del local-->
+    <div class="menu">
+      <div class="producto">
+        <img src="img/burcom.jpg" alt="Hamburguesa Común" />
+        <div class="contenido">
+          <h2>Hamburguesa Común</h2>
+          <p class="ingredientes">
+            Lechuga, Tomate, Medallon de carne, Aderezo + Porción de papas
+            fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$3.500</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una hamburguesa comun😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
 
-<h1 class="tmenu">🍔 Menú</h1>
+      <div class="producto">
+        <img src="Img/burespe.jpg" alt="Hamburguesa Especial" />
+        <div class="contenido">
+          <h2>Hamburguesa Especial</h2>
+          <p class="ingredientes">
+            Lechuga, Tomate, Jamon, Queso, Huevo, Medallon de carne, Aderezo +
+            Porción de papas fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$3.800</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una hamburguesa especial😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
 
+      <div class="producto">
+        <img src="Img/burdoble.jpg" alt="Hamburguesa Doble" />
+        <div class="contenido">
+          <h2>Hamburguesa Doble</h2>
+          <p class="ingredientes">
+            Lechuga, Tomate, Jamon, Queso cheddar, Huevo, Doble medallon de
+            carne, Aderezo + Porción de papas fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$4.800</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una hamburguesa doble😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <h2 id="lomitos" class="categoria">Lomitos</h2>
+    <div class="menu">
+      <div class="producto">
+        <img src="img/lomocom.jpg" alt="Lomito Común" />
+        <div class="contenido">
+          <h2>Lomito Común</h2>
+          <p class="ingredientes">
+            Lechuga, Tomate, filet de carne, Aderezo + Porción de papas fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$6.500</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un lomito común😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
 
-<h2 id="hamburguesas" class="categoria">Hamburguesas</h2>
-<div class="menu">
+      <div class="producto">
+        <img src="img/lomoesp.jpg" alt="Lomito Especial" />
+        <div class="contenido">
+          <h2>Lomito Especial</h2>
+          <p class="ingredientes">
+            Pan, carne, jamón, queso, huevo, lechuga y tomate.
+          </p>
+          <div class="footer">
+            <p class="precio">$6.800</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un lomito especial😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <h2 id="mila" class="categoria">Milanesas</h2>
+    <div class="menu">
+      <div class="producto">
+        <img src="Img/milacom.jpg" alt="Sanwich de milanesa común" />
+        <div class="contenido">
+          <h2>Sanwich de milanesa común</h2>
+          <p class="ingredientes">
+            Lechuga, Tomate, filet de carne, Aderezo + Porción de papas fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$6.500</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un sanwich de milanesa común😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
 
-<div class="producto">
-<img src="img/burcom.jpg" alt="Hamburguesa Común">
-<div class="contenido">
-<h2>Hamburguesa Común</h2>
-<p class="ingredientes">Lechuga, Tomate, Medallon de carne, Aderezo + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$3.500</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una hamburguesa comun😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
+      <div class="producto">
+        <img src="Img/milaespe.jpg" alt="Sanwich de milanesa especial" />
+        <div class="contenido">
+          <h2>Sanwich de milanesa especial</h2>
+          <p class="ingredientes">
+            Lechuga, Tomate, Jamon, Queso, Huevo, Milanesa de carne o de pollo,
+            Aderezo + Porción de papas fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$6.800</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un sanwich de milanesa especial😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
 
+      <div class="producto">
+        <img src="Img/milacaballo.jpg" alt="Milanesa a Caballo" />
+        <div class="contenido">
+          <h2>Milanesa a caballo</h2>
+          <p class="ingredientes">
+            Milanesa al plato con dos huevos fritos + Porción de papas fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$6.500</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una mila a caballo😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
 
-<div class="producto">
-<img src="Img/burespe.jpg" alt="Hamburguesa Especial">
-<div class="contenido">
-<h2>Hamburguesa Especial</h2>
-<p class="ingredientes">Lechuga, Tomate, Jamon, Queso, Huevo, Medallon de carne, Aderezo + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$3.800</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una hamburguesa especial😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
+      <div class="producto">
+        <img src="Img/milanapo.jpg" alt="Milanesa a la Napolitana" />
+        <div class="contenido">
+          <h2>Milanesa a la napolitana</h2>
+          <p class="ingredientes">
+            Milanesa al plato con salsa para pizza, Jamon, Queso + Porción de
+            papas fritas.
+          </p>
+          <div class="footer">
+            <p class="precio">$6.500</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una mila a la napolitana😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="producto">
-<img src="Img/burdoble.jpg" alt="Hamburguesa Doble">
-<div class="contenido">
-<h2>Hamburguesa Doble</h2>
-<p class="ingredientes">Lechuga, Tomate, Jamon, Queso cheddar, Huevo, Doble medallon de carne, Aderezo + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$4.800</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una hamburguesa doble😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
+    <h2 id="otros" class="categoria">Pancho y Salchipapa</h2>
+    <div class="menu">
+      <div class="producto">
+        <img src="img/pancho.jpg" alt="Un pancho" />
+        <div class="contenido">
+          <h2>Pancho</h2>
+          <p class="ingredientes">Lo armas a tu gusto por mensaje</p>
+          <div class="footer">
+            <p class="precio">$3.500</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un pancho"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
 
+      <div class="producto">
+        <img src="img/salchipapa.jpg" alt="Bandeja de Salchipapa" />
+        <div class="contenido">
+          <h2>Salchipapa</h2>
+          <p class="ingredientes">
+            Bandeja con salchichas y papa fritas con aderezo a gusto
+          </p>
+          <div class="footer">
+            <p class="precio">$4.800</p>
+            <a
+              class="btn-comprar"
+              href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una bandeja de salchipapa😋"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
+    <!-- Botón WhatsApp flotante -->
+    <a
+      href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para hacer un pedido."
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <img src="Img/whats.png" alt="WhatsApp" />
+    </a>
 
-
-<h2 id="lomitos" class="categoria">Lomitos</h2>
-<div class="menu">
-
-
-<div class="producto">
-<img src="img/lomocom.jpg" alt="Lomito Común">
-<div class="contenido">
-<h2>Lomito Común</h2>
-<p class="ingredientes">Lechuga, Tomate, filet de carne, Aderezo + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$6.500</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un lomito común😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-<div class="producto">
-<img src="img/lomoesp.jpg" alt="Lomito Especial">
-<div class="contenido">
-<h2>Lomito Especial</h2>
-<p class="ingredientes">Pan, carne, jamón, queso, huevo, lechuga y tomate.</p>
-<div class="footer">
-<p class="precio">$6.800</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un lomito especial😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-
-</div>
-
-
-<h2 id="mila" class="categoria">Milanesas</h2>
-<div class="menu">
-
-
-<div class="producto">
-<img src="Img/milacom.jpg" alt="Sanwich de milanesa común">
-<div class="contenido">
-<h2>Sanwich de milanesa común</h2>
-<p class="ingredientes">Lechuga, Tomate, filet de carne, Aderezo + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$6.500</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un sanwich de milanesa común😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-<div class="producto">
-<img src="Img/milaespe.jpg" alt="Sanwich de milanesa especial">
-<div class="contenido">
-<h2>Sanwich de milanesa especial</h2>
-<p class="ingredientes">Lechuga, Tomate, Jamon, Queso, Huevo, Milanesa de carne o de pollo, Aderezo + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$6.800</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un sanwich de milanesa especial😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-
-<div class="producto">
-<img src="Img/milacaballo.jpg" alt="Milanesa a Caballo">
-<div class="contenido">
-<h2>Milanesa a caballo</h2>
-<p class="ingredientes">Milanesa al plato con dos huevos fritos + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$6.500</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una mila a caballo😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-<div class="producto">
-<img src="Img/milanapo.jpg" alt="Milanesa a la Napolitana">
-<div class="contenido">
-<h2>Milanesa a la napolitana</h2>
-<p class="ingredientes">Milanesa al plato con salsa para pizza, Jamon, Queso + Porción de papas fritas.</p>
-<div class="footer">
-<p class="precio">$6.500</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una mila a la napolitana😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-
-</div>
-
-
-<h2 id="otros" class="categoria">Pancho y Salchipapa</h2>
-<div class="menu">
-
-
-<div class="producto">
-<img src="img/pancho.jpg" alt="Un pancho">
-<div class="contenido">
-<h2>Pancho</h2>
-<p class="ingredientes">Lo armas a tu gusto por mensaje</p>
-<div class="footer">
-<p class="precio">$3.500</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte un pancho" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-<div class="producto">
-<img src="img/salchipapa.jpg" alt="Bandeja de Salchipapa">
-<div class="contenido">
-<h2>Salchipapa</h2>
-<p class="ingredientes">Bandeja con salchichas y papa fritas con aderezo a gusto</p>
-<div class="footer">
-<p class="precio">$4.800</p>
-<a class="btn-comprar" href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para encargarte una bandeja de salchipapa😋" target="_blank">Comprar</a>
-</div>
-</div>
-</div>
-
-
-</div>
-
-   <!-- Botón WhatsApp flotante -->
-<a href="https://api.whatsapp.com/send?phone=3834688582&text=Hola para hacer un pedido."
-class="whatsapp-float"
-target="_blank"
-aria-label="WhatsApp">
-<img src="Img/whats.png" alt="WhatsApp">
-</a>
-
-    <footer>
+    <footer><!--Pie de pagina-->
       <div>
         <p>VUELVE PRONTO!</p>
         <p>

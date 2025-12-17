@@ -1,4 +1,8 @@
+/* TIPOGRAFÍA DE LA PAGINA */
+
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* ESTILO GENERAL DE LA PAGINA */
 
 * {
     margin: 0;
@@ -8,6 +12,9 @@
     font-weight: 400;
     font-style: normal;
  }
+
+ /* ENCABEZADO DE LA PAGINA */
+
  header {
    background-color: #F9F8FC;
  }
@@ -19,6 +26,8 @@
 .nombt{
   color: #fd3c01;
 }
+
+/* MENU DE NAVEGACION */
 
  nav {
   background-color:#17181C;
@@ -49,21 +58,22 @@ nav ul li a {
   position: relative;
 }
 
-
 a::after {
   content: '';
   position: absolute;
-  width: 0; /* Inicialmente no tiene ancho */
+  width: 0; 
   height: 2px;
-  background: #fd3c01; /* Color del subrayado */
-  bottom: 0; /* Posición debajo del texto */
+  background: #fd3c01; 
+  bottom: 0; 
   left: 0;
-  transition:  0.5s ease; /* Transición suave */
+  transition:  0.5s ease; 
 }
 
 nav ul li a:hover::after {
   width: 100%;
 }
+
+/* BANNER INTERACTIVO DE LA PAGINA */
 
 .banner {
   position: relative;
@@ -74,10 +84,10 @@ nav ul li a:hover::after {
   display: block;
 }
 
-/* Contenido centrado */
+
 .banner-overlay {
   position: absolute;
-  inset: 0; /* top right bottom left = 0 */
+  inset: 0; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +95,7 @@ nav ul li a:hover::after {
   text-align: center;
   color: white;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.3); /* opcional */
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .banner-overlay h2 {
@@ -93,7 +103,7 @@ nav ul li a:hover::after {
   margin-bottom: 20px;
 }
 
-/* Botones */
+
 .banner-links {
   display: flex;
   gap: 20px;
@@ -115,33 +125,32 @@ nav ul li a:hover::after {
   transition: 0.3s;
 }
 
+/* VISTA DE LOS PRODUCTOS EN TARJETAS DE LA PAGINA INDEX */
+
 .contenedor-tarjetas {
-    display: flex; /* ¡Esto las pone una al lado de la otra! */
-    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no caben */
-    justify-content: center; /* Centra las tarjetas */
-    gap: 100px; /* Espacio entre tarjetas */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 100px; 
     padding: 20px;
 }
 
-/* Estilos para cada tarjeta individual */
 .tarjeta {
-    width: 250px; /* Ancho de cada tarjeta */
+    width: 250px; 
     border: 1px solid #ccc;
     border-radius: 8px;
-    overflow: hidden; /* Para que la imagen no se salga del borde redondeado */
+    overflow: hidden; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el texto dentro de la tarjeta */
+    text-align: center; 
     background-color: black;
 }
 
-/* Estilos para la imagen dentro de la tarjeta */
 .tarjeta img {
-    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacio extra debajo de la imagen */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
-/* Estilos para la descripción */
 .tarjeta p {
     padding: 10px;
     margin: 0;
@@ -155,18 +164,19 @@ nav ul li a:hover::after {
 }
 
 
-footer {
-  background-color: #333; 
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-/*Desde aca son los estilos del menu*/
+
+
+/*////////////////////////////*/
+ /*ESTILOS DE LA PAGINA MENU*/
+/*/////////////////////////////*/
+
+/* TITULO DE PAGINA */
 
 .tmenu{
   text-align: center;
 }
 
+/* IMAGEN , IGREDIENTES , PRECIO Y BOTON DE COMPRA DE CADA PRODUCTO */
 
 .menu {
 display: grid;
@@ -248,9 +258,7 @@ transform: scale(1.05);
 }
 
 
-/* Boton de whatsapp flotante */
-
-
+/* BOTON DE WHATSAPP FLOTANTE */
 
 .whatsapp-float {
 position: fixed;
@@ -280,8 +288,131 @@ transform: scale(1.1);
 box-shadow: 0 6px 14px rgba(0,0,0,0.4);
 }
 
+
+/*//////////////////////////////////*/
+/* ESTILOS DE LA PAGINA CONTACTO */
+/*/////////////////////////////////*/
+
+/* IMAGEN DEL CARTEL DEL LOCAL */
+
+section {
+    width: 90%;
+    max-width: 1600px;
+    height: 500px;
+    margin: 50px auto;
+}
+
+#fila {
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+}
+#focontac {
+    width: 250px;
+    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 10px 0px 10px 0px;
+    filter: drop-shadow(10px 20px 5px );
+}
+#foto {
+    width: 20%;
+    max-width: 100%;
+}
+
+/* INFORMACIÓN DE CONTACTO DEL LOCAL */
+
+#info {
+    width: 70%;
+}
+#info h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 0;
+}
+
+.detalle strong{
+  max-width: 100%;
+}
+#info p {
+    color: black;
+    font-size: 15px;
+    margin: 30px;
+}
+#info article {
+    border: 3px solid orange;
+}
+article ul li {
+    color: black;
+    font-size: 20px;
+    font-family: "Russo One", sans-serif;
+    list-style: none;
+    width: 40%;
+    display: inline-block;
+}
+#info .redes {
+    margin: 30px 0;
+}
+#info .redes a{
+    margin: 0 20px;
+}
+
+/* FORMULARIO DE OPINIÓN DEL CLIENTE */
+
+.contact {
+    padding: 25px 30px;
+    background: linear-gradient(135deg, #f8772c, #fd3c01);
+    border: 3px solid white;
+    box-shadow: 0 0 5px #333;
+    border-radius: 10px;
+    color: black;
+    max-width: 500px;
+    margin: 50px auto 100px auto;
+}
+
+.nomb , .email , .comen {
+  background-color: white;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    justify-content: center;
+}
+
+.comen {
+  height: 70px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+
+/* PIE DE LA PAGINA */
+
+footer {
+  background-color: #333; 
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+/*/////////////////////*/
+/* ESTILO RESPONSIVE */
+/*////////////////////*/
+
+
 @media (max-width: 768px) {
   
+/* MENU DE NAVEGACIÓN PARA TODAS LAS PAGINAS*/
+
   nav ul {
     padding: 10px;
   }
@@ -295,8 +426,10 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.4);
     font-size: 1rem;
   }
 
+  /* BANNER DE PAGINA INDEX */
+
   .banner-overlay h2 {
-    font-size: 1.0rem;
+    font-size: 0.8rem;
   }
 
   .banner-links {
@@ -304,9 +437,11 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.4);
   }
 
   .banner-links a {
-    font-size: 10px;
-    padding: 10px;
+    font-size: 5px;
+    padding: 5px;
   }
+
+/* VISTA DE LOS PRODUCTOS EN TARJETAS DE LA PAGINA INDEX */
 
    .contenedor-tarjetas {
     gap: 30px;
@@ -316,6 +451,48 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.4);
   .tarjeta {
     width: 90%;
     max-width: 300px;
+  }
+
+/* IMAGEN DEL CARTEL DEL LOCAL DE LA PAGINA CONTACTO*/
+
+   #fila {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #foto,
+  #info {
+    width: 100%;
+    text-align: center;
+  }
+
+  #focontac {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  /* INFORMACIÓN DE CONTACTO DEL LOCAL  DE LA PAGINA CONTACTO*/
+
+  article ul li {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  section {
+    height: auto;
+    margin: 30px auto;
+  }
+
+  .contact {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  /* PIE DE TODAS LAS PAGINAS */
+
+  footer p {
+    font-size: 14px;
   }
 
 }
